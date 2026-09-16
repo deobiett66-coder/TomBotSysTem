@@ -118,13 +118,9 @@ SPAM_TEXTS = [
         "Địt mẹ sống như nhục như chó cái đầu bựa rác rưởi không ai thèm nhặt 😂😂",
         "Thằng chó đẻ ăn hại đái bậy, cuối đời mày chỉ xứng đáng làm phân bón cho cây rau muống cống nạng 😂😂"
     ],
-    # Bot 2: TomMod.No1
     ["𝐓𝐨𝐦𝐌𝐨𝐝.𝐍𝐨1 😂🤪"] * 50,
-    # Bot 3: Bai Tom Roi Aa
     ["𝘽ạ𝙞 𝙏𝙤𝙢 𝙍ồ𝙞 À𝙖 ⌨"] * 50,
-    # Bot 4: Ao Mang Xa Hoi A Em
     ["Ả𝗼 𝗠ạ𝗻𝗴 𝗫ã 𝗛ộ𝗶 À 𝗘𝗺 𓀢𓀠"] * 50,
-    # Bot 5: TomMod Hot Mọi Nền Tảng
     ["TomMod Hot Mọi Nền Tảng 🌐🪷"] * 50,
 ]
 
