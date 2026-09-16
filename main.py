@@ -7,8 +7,9 @@ async def spam_loop(chat_id, context):
         try:
             bot = context.bot_data['bots'][bot_index]
             texts = SPAM_TEXTS[bot_index]
-            # GỘP TẤT CẢ CÂU THÀNH 1 TIN NHẮN DUY NHẤT
-            message = "\n".join(texts)
+            # GỘP 40 CÂU THÀNH 1 TIN NHẮN
+            gop = texts[:40] if len(texts) >= 40 else texts
+            message = "\n".join(gop)
             await bot.send_message(chat_id=chat_id, text=message)
             await asyncio.sleep(0.1)
             bot_index += 1
