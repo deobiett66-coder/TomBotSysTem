@@ -19,17 +19,17 @@ SPAM_TEXTS = [
         "Địt mẹ cái giống loài này mình sao rich ra đẻ bụi các đạo thái à con chó rách =))=))",
         "Con đĩ mẹ mày đẻ ra mày lục đàng phê thuốc hay ngậm các thê hằng độc cứt =))=))",
         "Địt mẹ cái mặt mày nhìn như cái bồn cầu công cộng ai qua cụng ỉ nhà vậy em =))=))",
-        "Thằng chó đẻ hãm lồn, bú liếm cái bãi rác xả hội mà cả tưởng mình thượng đẳng à =))=))",
-        "Địt mẹ mày ngậm chặt cái mồm thối hoắc bốc mùi cứt trôi sông lại đi con lồn lồi =))=))"
+        
+        
     ],
     # Bot 2: 5 câu TomMod.No1
-    ["𝐓𝐨𝐦𝐌𝐨𝐝.𝐍𝐨1 😂🤪"] * 5,
+    ["𝐓𝐨𝐦𝐌𝐨𝐝.𝐍𝐨1 😂🤪"] * 3,
     # Bot 3: 5 câu Bai Tom Roi Aa
-    ["𝘽ạ𝙞 𝙏𝙤𝙢 𝙍ồ𝙞 À𝙖 ⌨"] * 5,
+    ["𝘽ạ𝙞 𝙏𝙤𝙢 𝙍ồ𝙞 À𝙖 ⌨"] * 3,
     # Bot 4: 5 câu Ao Mang Xa Hoi A Em
-    ["Ả𝗼 𝗠ạ𝗻𝗴 𝗫ã 𝗛ộ𝗶 À 𝗘𝗺 𓀢𓀠"] * 5,
+    ["Ả𝗼 𝗠ạ𝗻𝗴 𝗫ã 𝗛ộ𝗶 À 𝗘𝗺 𓀢𓀠"] * 3,
     # Bot 5: 5 câu TomMod Hot Mọi Nền Tảng
-    ["TomMod Hot Mọi Nền Tảng 🌐🪷"] * 5,
+    ["TomMod Hot Mọi Nền Tảng 🌐🪷"] * 3,
 ]
 
 is_spamming = False
@@ -117,7 +117,7 @@ async def spam_loop(chat_id, context):
                 if not is_spamming:
                     break
                 await bot.send_message(chat_id=chat_id, text=text)
-                await asyncio.sleep(0.1)
+    
             bot_index += 1
         except RetryAfter as e:
             print(f"Bot {bot_index+1} bị chặn, chuyển bot khác...")
