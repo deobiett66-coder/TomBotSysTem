@@ -14,7 +14,6 @@ TOKENS = [TOKEN_1, TOKEN_2, TOKEN_3, TOKEN_4, TOKEN_5]
 MY_UID = 8352636820
 
 SPAM_TEXTS = [
-    # Bot 1: 100 câu chửi cũ
     [
         "Địt mẹ cái giống loài này mình sao rich ra đẻ bụi các đạo thái à con chó rách =))=))",
         "Con đĩ mẹ mày đẻ ra mày lục đàng phê thuốc hay ngậm các thê hằng độc cứt =))=))",
@@ -211,7 +210,7 @@ async def spam_loop(chat_id, context):
                 await asyncio.sleep(0.1)
             bot_index += 1
         except RetryAfter as e:
-            print(f"Bot {bot_index+1} bị chặn, chờ {e.retry_after}s, chuyển bot khác...")
+            print(f"Bot {bot_index+1} bị chặn, chuyển bot khác...")
             bot_index += 1
         except Exception as e:
             print(f"Lỗi bot {bot_index+1}: {e}")
